@@ -1,0 +1,110 @@
+.articles {
+    margin-top: 25px;
+    height:auto !important;        /* for IE as it does not support min-height */
+    height:100%;
+}
+.articles .articles-search {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.articles .articles-search .btn {
+  height: 34px;
+}
+.articles .article:nth-child(odd) {
+  background: #E5E5E5;
+}
+
+.article {
+    /*height: 163px;
+    width: 370px;*/
+}
+
+.articles .article:nth-child(even) {
+  /*background-image: url("../images/boarder.png");
+  background-size: 370px 163px;*/
+}
+
+
+.articles .article:hover .article-header-actions {
+  display: block;
+}
+.articles .article .article-header {
+  position: relative;
+  overflow: hidden;
+}
+.articles .article .article-header:after {
+  content: '';
+  clear: both;
+}
+.articles .article .article-header-title {
+  float: left;
+  font-size: 30px;
+  font-weight: 300;
+}
+.articles .article .article-header-actions {
+  float: left;
+  display: none;
+  margin-left: 25px;
+  line-height: 64px;
+  transition-duration: .3s;
+}
+.articles .article .article-header-actions .btn {
+  padding: 5px 10px;
+}
+.articles .article .article-body {
+  margin-top: 10px;
+  margin-bottom: 26px;
+}
+
+.articles .article .article-body p {
+  font-size: 16px;
+  line-height: 26px;
+}
+.articles .article .article-footer-tags {
+  position: relative;
+  right: 10px;
+  bottom: 10px;
+  overflow: hidden;
+}
+.articles .article .article-footer-tags:after {
+  content: '';
+  clear: both;
+}
+.articles .article .article-footer-tags button {
+  position: relative;
+  float: left;
+  height: 20px;
+  margin-left: 25px;
+  padding: 0 5px;
+  line-height: 20px;
+  color: #fff;
+  background: #4f8cfc;
+  border: none;
+  font-size: 12px;
+  font-weight: 100;
+  transition-duration: .3s;
+  margin-bottom: 10px;
+}
+.articles .article .article-footer-tags button:before {
+  content: '';
+  float: left;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-color: transparent #4f8cfc transparent transparent;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  transition-duration: .3s;
+}
+.articles .article .article-footer-tags button:hover {
+  background: #555;
+}
+.articles .article .article-footer-tags button:hover:before {
+  border-color: transparent #555 transparent transparent;
+}
+
+.row {
+    height: 50px;
+}

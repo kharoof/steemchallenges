@@ -1,2 +1,2 @@
 # steemchallenges
-Find and Browse Challenges on Steemit
+a community for challenges on the Steem blockchain.
