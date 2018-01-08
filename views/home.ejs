@@ -1,0 +1,43 @@
+<div class="articles">
+
+	<% if(posts.length == 0) { %>
+		<!-- No article -->
+		<div>
+		    <section>
+		        <div class="container">
+		            <div class="container-title">
+		                No article.
+		            </div>
+		        </div>
+		    </section>
+		</div>
+	<% } %>
+
+	
+		
+	<div class="container">
+		<div class="row">
+			<% for (var i = 0; i < posts.length; i++) { %>
+				<div class="article col-md-4">
+				    <div class="container">
+				        <div class="article-header">
+				            <div class="article-header-title">
+				                <a href=<%= "https://steemit.com" + posts[i].url %>
+				                   target="_blank"> Culture Vulture </a>
+				            </div>
+				        </div>
+
+				        <div class="article-body">
+				            <p><%= posts[i].title %></p>
+				        </div>
+
+			            <div class="article-footer-tags">
+			                <button type="button">tag</button>
+			            </div>
+				    </div>
+				</div>
+			<% } %>
+		</div>
+	</div>
+		
+</div>
