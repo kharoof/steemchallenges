@@ -6,7 +6,6 @@ var router = express.Router();
 
 /* GET stats listing. */
 router.get('/stats', function(req, res, next) {
-	console.log("iciiii");
   	res.render('stats.ejs');
 });
 
