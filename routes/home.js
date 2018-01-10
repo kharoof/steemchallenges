@@ -15,7 +15,6 @@ router.get('/', function(req, res, next) {
 
 	var posts = null;
 	steem.api.getDiscussionsByActive(query,function(err, result) {
-    	console.log(err, result);
     	posts = result;
     	res.render('home.ejs', {posts: posts });
 	});

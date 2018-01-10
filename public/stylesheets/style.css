@@ -5,10 +5,10 @@ body, html {
   margin-bottom: 20px;
 }
 
-.flex-container {
+.body-content {
   display: flex;
   flex-direction: column;
-  min-height: 95%;
+  justify-content: space-between;
 }
 
 header {
@@ -16,14 +16,11 @@ header {
   color: #fff;
 }
 
-section.content {
-  display: block;
-  flex: 1;
+.footer {
+  height:20%;
+  color: #333;
+  text-align: center;
+  padding-top: 15px;
 }
 
-footer {
-  height:5%;
-  background-color: #FFC107;
-  color: #333;
-}
 
